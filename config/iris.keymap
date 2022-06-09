@@ -13,8 +13,8 @@
         watch: watch {
             label = "ZM_watch";
             compatible = "zmk,behavior-macro";
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <35>;
+            tap-ms = <35>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp W &kp A &kp T &kp C &kp H>
@@ -23,31 +23,41 @@
         allns: allns {
             label = "ZM_allns";
             compatible = "zmk,behavior-macro";
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <35>;
+            tap-ms = <35>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp MINUS &kp MINUS &kp A &kp L &kp L &kp MINUS &kp N &kp A &kp M &kp E &kp S &kp P &kp A &kp C &kp E &kp S &kp EQUAL &kp T &kp R &kp U &kp E>
                 ;
         };
         kctl: kctl {
-            label = "ZM_allns";
+            label = "ZM_kctl";
             compatible = "zmk,behavior-macro";
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <35>;
+            tap-ms = <35>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp K &kp U &kp B &kp E &kp C &kp T &kp L &kp SPACE>
                 ;
         };
         kconfig: kconfig {
-            label = "ZM_allns";
+            label = "ZM_kconfig";
             compatible = "zmk,behavior-macro";
-            wait-ms = <40>;
-            tap-ms = <40>;
+            wait-ms = <35>;
+            tap-ms = <35>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp MINUS &kp MINUS &kp K &kp U &kp B &kp E &kp C &kp O &kp N &kp F &kp I &kp G &kp SPACE &kp TILDE &kp FSLH &kp DOT &kp K &kp U &kp B &kp E &kp FSLH>
+                ;
+        };
+         kgetpods: kgetpods {
+            label = "ZM_getpods";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <35>;
+            tap-ms = <35>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp G &kp E &kp T &kp SPACE &kp P &kp O &kp D &kp S> 
                 ;
         };
    };
@@ -95,7 +105,7 @@
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                            |      |      |        |  |       |      |       |
 			bindings = <
-&trans    &trans &trans  &trans  &trans  &trans                       &allns      &trans            &trans             &trans   &trans    &trans
+&trans    &trans &trans  &trans  &trans  &trans                       &allns      &kgetpods         &trans             &trans   &trans    &trans
 &trans    &kp F1 &kp F2  &kp F3  &kp F4  &kctl                        &kp N6      &kp N7            &kp N8             &kp LPRN &kp RPRN  &trans
 &trans    &kp F5 &kp F6  &kp F7  &kp F8  &kconfig                     &trans      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &watch   &kp PIPE  &trans
 &trans    &kp F9 &kp F10 &kp F11 &kp F12 &kp F15   &trans   &trans    &kp KP_PLUS &kp RC(LEFT)      &kp RC(RIGHT)      &kp LBKT &kp BSLH  &trans
