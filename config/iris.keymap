@@ -17,7 +17,7 @@
             tap-ms = <40>;
             #binding-cells = <0>;
             bindings
-                , <&macro_tap &kp W &kp A &kp T &kp C &kp H>
+                = <&macro_tap &kp W &kp A &kp T &kp C &kp H>
                 ;
         };
         allns: allns {
@@ -27,7 +27,7 @@
             tap-ms = <40>;
             #binding-cells = <0>;
             bindings
-                , <&macro_tap &kp MINUS &kp MINUS &kp A &kp L &kp L &kp MINUS &kp N &kp A &kp M &kp E &kp S &kp P &kp A &kp C &kp E &kp S &kp EQUAL &kp T &kp R &kp U &kp E>
+                = <&macro_tap &kp MINUS &kp MINUS &kp A &kp L &kp L &kp MINUS &kp N &kp A &kp M &kp E &kp S &kp P &kp A &kp C &kp E &kp S &kp EQUAL &kp T &kp R &kp U &kp E>
                 ;
         };
         kctl: kctl {
@@ -37,7 +37,7 @@
             tap-ms = <40>;
             #binding-cells = <0>;
             bindings
-                , <&macro_tap &kp K &kp U &kp B &kp E &kp C &kp T &kp L &kp SPACE>
+                = <&macro_tap &kp K &kp U &kp B &kp E &kp C &kp T &kp L &kp SPACE>
                 ;
         };
         kconfig: kconfig {
@@ -47,7 +47,7 @@
             tap-ms = <40>;
             #binding-cells = <0>;
             bindings
-                , <&macro_tap &kp MINUS &kp MINUS &kp K &kp U &kp B &kp E &kp C &kp O &kp N &kp F &kp I &kp G &kp SPACE &kp TILDE &kp FSLH &kp DOT &kp K &kp U &kp B &kp E &kp FSLH>
+                = <&macro_tap &kp MINUS &kp MINUS &kp K &kp U &kp B &kp E &kp C &kp O &kp N &kp F &kp I &kp G &kp SPACE &kp TILDE &kp FSLH &kp DOT &kp K &kp U &kp B &kp E &kp FSLH>
                 ;
         };
    };
