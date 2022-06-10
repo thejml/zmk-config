@@ -50,7 +50,7 @@
                 = <&macro_tap &kp MINUS &kp MINUS &kp K &kp U &kp B &kp E &kp C &kp O &kp N &kp F &kp I &kp G &kp SPACE &kp TILDE &kp FSLH &kp DOT &kp K &kp U &kp B &kp E &kp FSLH>
                 ;
         };
-         kgetpods: kgetpods {
+        kgetpods: kgetpods {
             label = "ZM_getpods";
             compatible = "zmk,behavior-macro";
             wait-ms = <35>;
@@ -58,6 +58,16 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp G &kp E &kp T &kp SPACE &kp P &kp O &kp D &kp S> 
+                ;
+        };
+        kone: kone {
+            label = "ZM_kone";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <35>;
+            tap-ms = <35>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp A &kp W &kp K &kp SPACE &kp SQT &kp LBKT &kp P &kp R &kp I &kp N &kp T &kp DOLLAR &kp N1 &kp RBKT &kp SQT>  
                 ;
         };
    };
@@ -105,11 +115,11 @@
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                            |      |      |        |  |       |      |       |
 			bindings = <
-&trans    &trans &trans  &trans  &trans  &trans                       &allns      &kgetpods         &trans             &trans   &trans    &trans
-&trans    &kp F1 &kp F2  &kp F3  &kp F4  &kctl                        &kp N6      &kp N7            &kp N8             &kp LPRN &kp RPRN  &trans
-&trans    &kp F5 &kp F6  &kp F7  &kp F8  &kconfig                     &trans      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &watch   &kp PIPE  &trans
-&trans    &kp F9 &kp F10 &kp F11 &kp F12 &kp F15   &trans   &trans    &kp KP_PLUS &kp RC(LEFT)      &kp RC(RIGHT)      &kp LBKT &kp BSLH  &trans
-                   		   		 &trans  &trans    &trans   &trans    &trans      &trans
+&trans    &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5)                   &allns      &kgetpods         &trans             &trans   &trans    &trans
+&trans    &kp F1     &kp F2     &kp F3     &kp F4     &kctl                        &kp N6      &kp N7            &kp N8             &kp LPRN &kp RPRN  &trans
+&trans    &kp F5     &kp F6     &kp F7     &kp F8     &kconfig                     &trans      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &watch   &kp PIPE  &trans
+&trans    &kp F9     &kp F10    &kp F11    &kp F12    &kone     &trans   &trans    &kp KP_PLUS &kp RC(LEFT)      &kp RC(RIGHT)      &kp LBKT &kp BSLH  &trans
+                   		   	   	           &trans     &trans    &trans   &trans    &trans      &trans
 			>;
 		};
 	};
