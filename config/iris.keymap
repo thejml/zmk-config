@@ -17,7 +17,7 @@
             tap-ms = <35>;
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp M &kp y &kp C &kp u &kp t &kp e &kp W &kp a &kp f &kp u &kp 1 &kp 5 &kp A &kp s &kp u &kp k &kp a &kp EXCL>
+                = <&macro_tap &kp LS(M) &kp Y &kp LS(C) &kp U &kp T &kp E &kp LS(W) &kp A &kp F &kp U &kp 1 &kp 5 &kp LS(A) &kp S &kp U &kp K &kp A &kp EXCL>
                 ;
         };
         np: np {
@@ -27,7 +27,7 @@
             tap-ms = <35>;
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp H &kp a &kp v &kp e &kp B &kp 3 &kp 3 &kp r &kp s &kp W &kp i &kp t &kp h &kp A &kp s &kp u &kp k &kp a &kp EXCL>
+                = <&macro_tap &kp LS(H) &kp A &kp V &kp E &kp 4 &kp LS(B) &kp E &kp E &kp R &kp S &kp LS(W) &kp I &kp T &kp H &kp LS(A) &kp S &kp U &kp K &kp A &kp EXCL>
                 ;
         };
         ap: ap { 
@@ -37,7 +37,7 @@
             tap-ms = <35>;
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp 6 &kp v &kp I &kp Y &kp R &kp U &kp t &kp M &kp G &kp c &kp y &kp 4 &kp e &kp f &kp a &kp o &kp R &kp Q &kp K &kp a &kp 9 &kp M>
+                = <&macro_tap &kp 6 &kp V &kp LS(I) &kp LS(Y) &kp LS(R) &kp LS(U) &kp T &kp LS(M) &kp LS(G) &kp C &kp Y &kp 4 &kp E &kp F &kp A &kp O &kp LS(R) &kp LS(Q) &kp LS(K) &kp A &kp 9 &kp LS(M)>
                 ;
         };
         kconfig: kconfig {
