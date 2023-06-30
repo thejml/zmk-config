@@ -10,34 +10,34 @@
 
 / {
     macros {
-        watch: watch {
-            label = "ZM_watch";
+        op: op {
+            label = "ZM_op";
             compatible = "zmk,behavior-macro";
             wait-ms = <35>;
             tap-ms = <35>;
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp W &kp A &kp T &kp C &kp H>
+                = <&macro_tap &kp M &kp y &kp C &kp u &kp t &kp e &kp W &kp a &kp f &kp u &kp 1 &kp 5 &kp A &kp s &kp u &kp k &kp a &kp EXCL>
                 ;
         };
-        allns: allns {
-            label = "ZM_allns";
+        np: np {
+            label = "ZM_np";
             compatible = "zmk,behavior-macro";
             wait-ms = <35>;
             tap-ms = <35>;
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp MINUS &kp MINUS &kp A &kp L &kp L &kp MINUS &kp N &kp A &kp M &kp E &kp S &kp P &kp A &kp C &kp E &kp S &kp EQUAL &kp T &kp R &kp U &kp E>
+                = <&macro_tap &kp H &kp a &kp v &kp e &kp B &kp 3 &kp 3 &kp r &kp s &kp W &kp i &kp t &kp h &kp A &kp s &kp u &kp k &kp a &kp EXCL>
                 ;
         };
-        kctl: kctl {
-            label = "ZM_kctl";
+        ap: ap { 
+            label = "ZM_";
             compatible = "zmk,behavior-macro";
             wait-ms = <35>;
             tap-ms = <35>;
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp K &kp U &kp B &kp E &kp C &kp T &kp L &kp SPACE>
+                = <&macro_tap &kp 6 &kp v &kp I &kp Y &kp R &kp U &kp t &kp M &kp G &kp c &kp y &kp 4 &kp e &kp f &kp a &kp o &kp R &kp Q &kp K &kp a &kp 9 &kp M>
                 ;
         };
         kconfig: kconfig {
@@ -99,7 +99,7 @@
 // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
 //                            |      |      |        |  |       |      |       |
 			bindings = <
-&bt BT_CLR    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                    &trans    &trans    &trans     &trans   &trans     &trans
+&kp LG(LS(M)) &bt BT_CLR    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                    &trans    &trans    &trans     &trans   &trans     &trans
 &kp C_BRI_UP  &kp C_PP     &kp PGDN     &kp UP       &kp PGUP     &kp C_VOL_UP                    &kp EQUAL &kp N7    &kp N8     &kp N9   &kp LBKT   &kp RBKT
 &kp C_BRI_DN  &kp C_NEXT   &kp LEFT     &kp DOWN     &kp RIGHT    &kp C_VOL_DN                    &kp CARET &kp N4    &kp N5     &kp N6   &kp PLUS   &trans
 &trans        &kp C_PREV   &kp HOME     &trans       &kp END      &kp C_MUTE    &trans   &trans   &kp DOT   &kp N1    &kp N2     &kp N3   &kp EQUAL  &trans
@@ -115,7 +115,7 @@
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //                            |      |      |        |  |       |      |       |
 			bindings = <
-&trans    &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5)                   &allns      &kgetpods         &trans             &trans   &trans    &trans
+&trans    &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5)                   &op         &np               &ap             &trans   &trans    &trans
 &trans    &kp F1     &kp F2     &kp F3     &kp F4     &kctl                        &kp N6      &kp N7            &kp N8             &kp LPRN &kp RPRN  &trans
 &trans    &kp F5     &kp F6     &kp F7     &kp F8     &kconfig                     &trans      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &watch   &kp PIPE  &trans
 &trans    &kp F9     &kp F10    &kp F11    &kp F12    &kone     &trans   &trans    &kp KP_PLUS &kp RC(LEFT)      &kp RC(RIGHT)      &kp LBKT &kp BSLH  &trans
