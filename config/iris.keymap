@@ -40,6 +40,16 @@
                 = <&macro_tap &kp 6 &kp V &kp LS(I) &kp LS(Y) &kp LS(R) &kp LS(U) &kp T &kp LS(M) &kp LS(G) &kp C &kp Y &kp 4 &kp E &kp F &kp A &kp O &kp LS(R) &kp LS(Q) &kp LS(K) &kp A &kp 9 &kp LS(M)>
                 ;
         };
+        kctl: kctl { 
+            label = "ZM_";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <35>;
+            tap-ms = <35>;
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp K &kp U &kp B &kp E &kp C &kp T &kp L &kp SPACE>
+                ;
+        };
         kconfig: kconfig {
             label = "ZM_kconfig";
             compatible = "zmk,behavior-macro";
