@@ -127,7 +127,7 @@
 			bindings = <
 &trans    &kp LA(N1) &kp LA(N2) &kp LA(N3) &kp LA(N4) &kp LA(N5)                   &op         &np               &ap             &trans   &trans    &trans
 &trans    &kp F1     &kp F2     &kp F3     &kp F4     &kctl                        &kp N6      &kp N7            &kp N8             &kp LPRN &kp RPRN  &trans
-&trans    &kp F5     &kp F6     &kp F7     &kp F8     &kconfig                     &trans      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &watch   &kp PIPE  &trans
+&trans    &kp F5     &kp F6     &kp F7     &kp F8     &kconfig                     &trans      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &trans   &kp PIPE  &trans
 &trans    &kp F9     &kp F10    &kp F11    &kp F12    &kone     &trans   &trans    &kp KP_PLUS &kp RC(LEFT)      &kp RC(RIGHT)      &kp LBKT &kp BSLH  &trans
                    		   	   	           &trans     &trans    &trans   &trans    &trans      &trans
 			>;
