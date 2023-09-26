@@ -66,7 +66,7 @@
             wait-ms = <10>;
             tap-ms = <20>;
             #binding-cells = <0>;
-            bindings |grep -v Running
+            bindings
                 = <&macro_tap &kp G &kp E &kp T &kp SPACE &kp P &kp O &kp D &kp S &kp SPACE &kp MINUS &kp LS(A) &kp PIPE &kp G &kp R &kp E &kp P &kp MINUS &kp v &kp LS(R) &kp U &kp N &kp N &kp I &kp N &kp G> 
                 ;
         };
