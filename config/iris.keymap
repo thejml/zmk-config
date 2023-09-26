@@ -53,8 +53,8 @@
         kconfig: kconfig {
             label = "ZM_kconfig";
             compatible = "zmk,behavior-macro";
-            wait-ms = <35>;
-            tap-ms = <35>;
+            wait-ms = <5>;
+            tap-ms = <10>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp MINUS &kp MINUS &kp K &kp U &kp B &kp E &kp C &kp O &kp N &kp F &kp I &kp G &kp SPACE &kp TILDE &kp FSLH &kp DOT &kp K &kp U &kp B &kp E &kp FSLH>
@@ -63,18 +63,18 @@
         kgetpods: kgetpods {
             label = "ZM_getpods";
             compatible = "zmk,behavior-macro";
-            wait-ms = <10>;
-            tap-ms = <20>;
+            wait-ms = <5>;
+            tap-ms = <10>;
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp G &kp E &kp T &kp SPACE &kp P &kp O &kp D &kp S &kp SPACE &kp MINUS &kp LS(A) &kp PIPE &kp G &kp R &kp E &kp P &kp MINUS &kp V &kp LS(R) &kp U &kp N &kp N &kp I &kp N &kp G> 
+                = <&macro_tap &kp G &kp E &kp T &kp SPACE &kp P &kp O &kp D &kp S &kp SPACE &kp MINUS &kp LS(A) &kp PIPE &kp G &kp R &kp E &kp P &kp SPACE &kp MINUS &kp V &kp SPACE &kp LS(R) &kp U &kp N &kp N &kp I &kp N &kp G> 
                 ;
         };
         kone: kone {
             label = "ZM_kone";
             compatible = "zmk,behavior-macro";
-            wait-ms = <35>;
-            tap-ms = <35>;
+            wait-ms = <5>;
+            tap-ms = <10>;
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp A &kp W &kp K &kp SPACE &kp SQT &kp LBKT &kp SPACE &kp P &kp R &kp I &kp N &kp T &kp SPACE &kp DOLLAR &kp N1 &kp SPACE &kp RBKT &kp SQT>  
