@@ -17,7 +17,7 @@
             tap-ms = <20>;
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LS(B) &kp O &kp C &kp C &kp I &kp N1 &kp LS(N5) &kp LS(M) &kp Y &kp LS(C) &kp U &kp T &kp E &kp LS(R) &kp O &kp C &kp K &kp EXCL>
+                = <&macro_tap &kp LS(I) &kp LS(A) &kp M &kp LS(M) &kp A &kp R &kp R &kp I &kp E &kp D &kp N2 &kp LS(A) &kp S &kp U &kp K &kp A &kp EXCL>
                 ;
         };
         np: np {
